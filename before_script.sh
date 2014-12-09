@@ -1,8 +1,7 @@
 #!/bin/bash
 
 if [ "$PHPCS" = '1' ]; then
-	pear channel-discover pear.cakephp.org
-	pear install --alldeps cakephp/CakePHP_CodeSniffer
+	pear install --alldeps PHP_CodeSniffer-1.5.5;
 	phpenv rehash
 	exit 0
 fi
